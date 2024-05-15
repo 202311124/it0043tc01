@@ -30,4 +30,6 @@ body {
     font-family: "Ubuntu Sans Mono";
     color: rgb(255, 255, 255);
     font-size: 23px;
+    padding-left: 200px;
+    padding-right: 200px;
   }
