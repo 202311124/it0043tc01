@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+body {
+    background-image: url("BG.jpg");
+  }
+  .logo{
+    width: 250px;
+    position: relative;
+    top: 30px;
+    right: -40px;
+  }
+  .ad {
+    font-family: "Ubuntu Sans Mono";
+    color: rgb(255, 0, 0);
+    font-size: 50px;
+  }
+  .body
+  {
+    font-family: "Ubuntu Sans Mono";
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+  }
+  .no
+  {
+    font-family: "Ubuntu Sans Mono";
+    color: rgb(0, 255, 0);
+    font-size: 30px;
+  }
+  .bofa
+  {
+    font-family: "Ubuntu Sans Mono";
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+  }
