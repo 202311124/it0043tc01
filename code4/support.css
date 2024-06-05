@@ -5,7 +5,7 @@
     
 }
 
-.bg {
+body {
     background-image: url("ring-bg.gif");
     background-repeat: no-repeat;
     background-position: center;
