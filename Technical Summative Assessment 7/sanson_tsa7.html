@@ -12,36 +12,43 @@
         <div class="button-menu">
             <div class="menu1">
                 <button class="RF" onclick="reset()">Reset Flexbox</button>
-                <input type="number" value="0" class="C1">
-                <button class="Gap" onclick="gap()">Gap</button>
+                <input type="number" placeholder="Enter Gap Size" class="C1" id="gap" >
+                <button class="Gap" onclick="setgap()">Gap</button>
             </div>
            
             <div class="menu2">
                 <h2 class="FD">Flex Direction</h2>
-                <button class="row" onclick="row()">Row</button>
-                <button class="col" onclick="col()">Column</button>
+                <button class="row" onclick="flex('row')">Row</button>
+                <button class="col" onclick="flex('column')">Column</button>
             </div>
             
             <div class="menu3">
                  <h2 class="JC">Justify Content</h2>
-                <button class="st" onclick="start()">Start</button>
-                <button class="ce" onclick="center()">Center</button>
-                <button class="end" onclick="end()">End</button>
-                <button class="SB" onclick="space_between()">Space Between</button>
-                <button class="SA" onclick="space_around()">Space Around</button>
-                <button class="SE" onclick="space_evenly()">Space Evenly</button>
+                <button class="st" onclick="justify('flex-start')">Start</button>
+                <button class="ce" onclick="justify('center')">Center</button>
+                <button class="end" onclick="justify('flex-end')">End</button>
+                <button class="SB" onclick="justify('space-between')">Space Between</button>
+                <button class="SA" onclick="justify('space-around')">Space Around</button>
+                <button class="SE" onclick="justify('space-evenly')">Space Evenly</button>
             </div>
+
+            <div class="menu3-5">
+                <h2 class="AI">Align Items</h2>
+               <button class="st" onclick="align('flex-start')">Start</button>
+               <button class="ce" onclick="align('center')">Center</button>
+               <button class="end2" onclick="align('flex-end')">End</button>
+           </div>
        
             <div class="menu4">
                 <h2 class="FG">Flex Grow</h2>
-                <button class="R" onclick="resetg()">Reset</button>
-                <button class="GA" onclick="g0()">Grow All</button>
-                <input type="number" value="0" class="C2">
-                <button class="G1" onclick="g1()">Grow Box 1</button>
-                <input type="number" value="0" class="C3">
-                <button class="G2" onclick="g2()">Grow Box 2</button>
-                <input type="number" value="0" class="C4">
-                <button class="G3" onclick="g3()">Grow Box 3</button>
+                <button class="R" onclick="setgrow(4)">Reset</button>
+                <button class="GA" onclick="setgrow(0)" id="grow0">Grow All</button>
+                <input type="number" class="C2" id="grow1" placeholder="Enter Box 1 Flex Grow">
+                <button class="G1" onclick="setgrow(1)">Grow Box 1</button>
+                <input type="number" class="C3" id="grow2" placeholder="Enter Box 2 Flex Grow">
+                <button class="G2" onclick="setgrow(2)">Grow Box 2</button>
+                <input type="number" class="C4" id="grow3" placeholder="Enter Box 3 Flex Grow">
+                <button class="G3" onclick="setgrow(3)">Grow Box 3</button>
             </div>
         </div>
 
