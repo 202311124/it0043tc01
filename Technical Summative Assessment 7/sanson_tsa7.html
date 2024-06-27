@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="supportCSS.css">
+
+    <title>Technical Summative Assessment 7</title>
+</head>
+<body>
+    <div class="page">
+        <div class="button-menu">
+            <div class="menu1">
+                <button class="RF" onclick="reset()">Reset Flexbox</button>
+                <input type="number" placeholder="Enter Gap Size" class="C1" id="gap" >
+                <button class="Gap" onclick="setgap()">Gap</button>
+            </div>
+           
+            <div class="menu2">
+                <h2 class="FD">Flex Direction</h2>
+                <button class="row" onclick="flex('row')">Row</button>
+                <button class="col" onclick="flex('column')">Column</button>
+            </div>
+            
+            <div class="menu3">
+                 <h2 class="JC">Justify Content</h2>
+                <button class="st" onclick="justify('flex-start')">Start</button>
+                <button class="ce" onclick="justify('center')">Center</button>
+                <button class="end" onclick="justify('flex-end')">End</button>
+                <button class="SB" onclick="justify('space-between')">Space Between</button>
+                <button class="SA" onclick="justify('space-around')">Space Around</button>
+                <button class="SE" onclick="justify('space-evenly')">Space Evenly</button>
+            </div>
+
+            <div class="menu3-5">
+                <h2 class="AI">Align Items</h2>
+               <button class="st" onclick="align('flex-start')">Start</button>
+               <button class="ce" onclick="align('center')">Center</button>
+               <button class="end2" onclick="align('flex-end')">End</button>
+           </div>
+       
+            <div class="menu4">
+                <h2 class="FG">Flex Grow</h2>
+                <button class="R" onclick="setgrow(4)">Reset</button>
+                <button class="GA" onclick="setgrow(0)" id="grow0">Grow All</button>
+                <input type="number" class="C2" id="grow1" placeholder="Enter Box 1 Flex Grow">
+                <button class="G1" onclick="setgrow(1)">Grow Box 1</button>
+                <input type="number" class="C3" id="grow2" placeholder="Enter Box 2 Flex Grow">
+                <button class="G2" onclick="setgrow(2)">Grow Box 2</button>
+                <input type="number" class="C4" id="grow3" placeholder="Enter Box 3 Flex Grow">
+                <button class="G3" onclick="setgrow(3)">Grow Box 3</button>
+            </div>
+        </div>
+
+        <div class="display" id="boxes">
+            <div class="box1">1</div>
+            <div class="box2">2</div>
+            <div class="box3">3</div>
+        </div>
+
+        <script src="supportJS.js"></script>
+    </div>
+
+
+</body>
+</html>
